@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "/Users/josecarlossantos/Desktop/dev/udemy/forkify"
 		}
 	],
 	"settings": {

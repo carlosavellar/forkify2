@@ -6,6 +6,10 @@ import { elements } from './base';
 export const getInput = () => elements.inputS.value;
 
 
+export const clearResults = () => {
+   elements.resultList.innerHTML = ' ';
+}
+
 const limitCharacter = (title, limit = 17) => {
     const newTtitle = [];
     if(title.length > limit){
@@ -20,6 +24,7 @@ const limitCharacter = (title, limit = 17) => {
     }
     return title;
 }
+
 
 const renderRecipe = recipe => {
     
@@ -37,6 +42,9 @@ const renderRecipe = recipe => {
     elements.resultList.insertAdjacentHTML("beforeend", markup);
             
 }
+
+
+
 
 export const renderResult = recipes => {
     // debugger;
